@@ -5,38 +5,106 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center center; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-header{
+  color: rgb(234, 211, 142);
+  font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.description{
+  color: rgb(133, 183, 236);
+  font-size: 25px;
 }
 
-.card {
-  padding: 2em;
+.Earth-Image{
+  width: 25%;
+  border: 1px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.read-the-docs {
-  color: #888;
+.Earth-Image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.info-data{
+  color: white;
+  font-weight: 500;
+  background-color: black;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.image-info-container {
+  display: flex;
+  align-items: flex-start; /* aligns top edges */
+  gap: 1.5rem; /* spacing between image and info */
+  margin-top: 2rem;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* Tailwind's gray-100 equivalent */
+  padding: 2rem;
+}
+
+.main-content {
+  flex: 1;
+  text-align: center;
+}
+
+.discover-button {
+  background-color: #2533f0; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.discover-button:hover {
+  background-color: #1d4ed8; 
+}
+
+.ban-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e24d4d; 
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.ban-button:hover {
+  background-color: #dc2626; 
+}
+
+.banned-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 16rem;
+  height: 100%;
+  padding: 1rem;
+  background-color: #b2b2b5;
+
+}
+
+.banned-list {
+  font-size: 0.875rem;
+  color: #000000;
+}
+
+.banned-list li {
+  margin-bottom: 0.25rem;
+}
+
